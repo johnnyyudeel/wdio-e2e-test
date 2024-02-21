@@ -1,7 +1,7 @@
 import { Given, When, Then } from "@wdio/cucumber-framework";
 import * as chai from "chai"
 
-Given(/^Google page is opened$/, async function () {
+Given(/^Google page is opened$/, async function() {
     console.log(`Before opening browser...`)
     await browser.url("https://www.google.com")
     await browser.pause(500)
@@ -15,7 +15,7 @@ When(/^Search with (.*)/, async function(searchItem) {
     await browser.keys("Enter")
 })
 
-Then(/^Click on the first search result*/, async function () {
+Then(/^Click on the first search result*/, async function() {
     let ele = await $(`<h3>`)
     await ele.click()
 })
