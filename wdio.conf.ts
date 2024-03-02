@@ -99,13 +99,13 @@ export const config: Options.Testrunner = {
       acceptInsecureCerts: true,
       timeouts: { implicit: 20000, pageLoad: 20000, script: 30000 },
     },
-    {
-      maxInstances: 5,
-      //
-      browserName: "firefox",
-      acceptInsecureCerts: true,
-      timeouts: { implicit: 10000, pageLoad: 20000, script: 30000 },
-    },
+    // {
+    //   maxInstances: 5,
+    //   //
+    //   browserName: "firefox",
+    //   acceptInsecureCerts: true,
+    //   timeouts: { implicit: 10000, pageLoad: 20000, script: 30000 },
+    // },
   ],
 
   //
