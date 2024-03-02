@@ -1,0 +1,5 @@
+[
+  { "UserType": "StdUser", "Username": "standard_user" },
+  { "UserType": "ProbUser", "Username": "problem_user" },
+  { "UserType": "PerfUser", "Username": "performance_glitch_user" }
+]

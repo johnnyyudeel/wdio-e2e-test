@@ -1,5 +1,5 @@
-// import { Given, When, Then } from "@wdio/cucumber-framework";
-import { Given, When, Then } from "@cucumber/cucumber";
+// import { Given, When, Then } from "@cucumber/cucumber";
+import { Given, When, Then } from "@wdio/cucumber-framework";
 import * as chai from "chai";
 
 Given(/^Google page is opened$/, async function () {
@@ -11,7 +11,7 @@ Given(/^Google page is opened$/, async function () {
 });
 
 When(/^Search with (.*)/, async function (searchItem) {
-  console.log(`>> serachItem: ${searchItem}`);
+  console.log(`>> searchItem: ${searchItem}`);
   let ele = await $(`[name=q]`);
   await ele.setValue(searchItem);
   await browser.keys("Enter");
